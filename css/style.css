@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Lato);
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #333;
+    color:#efefef;
+}
+
+html {
+  height: 100%;
+}
+body {position:absolute; top:0; bottom:0; right:0; left:0;}
+
+h1 {
+  font-size:2.5em;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.headline {
+  font-size:2em;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#map {
+    background-color: #333;
+    border-bottom: 0px;
+    margin: 0px auto;
+    height: 100%;
+}
+.hidden {display: none;}
+#info {
+  border-top: 0px;
+  background-color:#333;
+  height:100%;
+}
+#menu {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom:5px;
+}
+#text {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  padding: 0px 15px;
+  color:#efefef;
+  text-align: justify;
+}
+
+.btn-default {
+  border-radius: 0px!important;
+  border: 1px solid #C5E8E3!important;
+  background-color: transparent!important;
+  color:#C5E8E3!important;
+}
+
+
+div.cartodb-legend-stack { 
+/*change position, */
+bottom:0px!important;
+top:15px!important;
+border-radius: 0px!important;
+box-shadow: none!important;
+border: none!important;
+background-color: transparent!important;
+}
+
+div.cartodb-legend-stack div.cartodb-legend {
+  background-color:transparent!important;
+  border-radius: 0px!important;
+}
+
+div.cartodb-legend.category ul li {
+  color:#efefef!important;
+  font-family:'Lato', sans-serif!important;
+}
+
+.leaflet-bar a, .leaflet-bar a:hover {
+  background-color: #333!important;
+  color:#C5E8E3!important;
+  border-radius: 0px!important;
+  box-shadow: none!important;
+  border: 1px solid #C5E8E3!important;
+}
+
+.leaflet-left .leaflet-control {
+  margin-left: 30px!important;
+  box-shadow: none!important;
+}
