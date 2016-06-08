@@ -1,17 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans|Lato);
 @import url(https://fonts.googleapis.com/css?family=Gudea|Playfair+Display|Suranna);
 html, body {
-    width: 100%;
+    width: 60%;
     margin: 0;
     padding: 0;
     background-color: #fff;
     font-family: 'Gudea', sans-serif;
     color:#555;
+    margin-right:auto;
+    margin-left:auto;
+    margin: 10px auto;
+    border:1px solid #e5e5e5;
 }
 
-html {
-  height: 100%;
-}
 body {position:absolute; top:0; bottom:0; right:0; left:0;}
 
 h1 {
@@ -33,6 +34,10 @@ h1 {
     border-bottom: 0px;
     margin: 0px auto;
     height: 480px;
+}
+.row {
+  margin-left:0px;
+  margin-right:0px;
 }
 
 .hidden {display: none;}
@@ -83,7 +88,7 @@ div.cartodb-legend-stack div.cartodb-legend {
 
 div.cartodb-legend.category ul li {
   color:#999!important;
-  font-family:'Lato', sans-serif!important;
+  font-family:'Gudea', sans-serif!important;
 }
 
 .leaflet-bar a, .leaflet-bar a:hover {
@@ -102,5 +107,6 @@ div.cartodb-legend.category ul li {
 #credit {
   font-family:'Gudea', sans-serif;
   text-align:center;
+  padding:10px 0px;
 }
 
