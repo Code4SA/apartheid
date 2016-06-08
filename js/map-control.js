@@ -3,8 +3,8 @@ window.onload = function() {
 
     // Choose center and zoom level
     var options = {
-        center: [-29.356213, 25.042417], // South Africa
-        zoom: 5,
+        center: [-25.749306, 28.202061], // South Africa
+        zoom: 10.5,
         scrollWheelZoom: false
     }
 
@@ -21,6 +21,9 @@ window.onload = function() {
         .addTo(map_object);
 
     //btn - metro switch
+
+    // Default
+    $("#pt").removeClass("hidden").show(); 
 
     // Joburg
     $(".btnJoburg").on('click', function() {
@@ -105,7 +108,7 @@ window.onload = function() {
 
     // Pretoria
     $(".btnPretoria").on('click', function() {
-    map_object.setView([-25.749306, 28.202061],12);
+    map_object.setView([-25.749306, 28.202061],10);
     // hide info
     $("#ct").addClass("hidden").hide();
     $("#jb").addClass("hidden").hide();
@@ -121,7 +124,7 @@ window.onload = function() {
 
     // Port Elizabeth
     $(".btnPortElizabeth").on('click', function() {
-    map_object.setView([-33.726879, 25.539763],12);
+    map_object.setView([-33.913990, 25.519156],11);
     // hide info
     $("#ct").addClass("hidden").hide();
     $("#jb").addClass("hidden").hide();
@@ -153,7 +156,7 @@ window.onload = function() {
 
     //Bloemfontein
     $(".btnBloemfontein").on('click', function() {
-    map_object.setView([-29.119934, 26.225125],12);
+    map_object.setView([-29.119934, 26.225125],11);
     // hide info
     $("#ct").addClass("hidden").hide();
     $("#jb").addClass("hidden").hide();
