@@ -2,7 +2,7 @@
 <head>
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
   <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-  <title>Apartheid Map</title>
+  <title>Apartheid Story</title>
   <link rel="stylesheet" href="css/cartodb.css" />
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -11,90 +11,33 @@
 
 <body>
   
+  <div id="leadImg" class="col-xs-12"><img src="img/view.jpg" title="View" alt="View" /><p><span class="caption"></span>Photo: Name Surname</p></div>
+
   <div>
     <h1>The Legacy of Apartheid</h1>
   </div>
 
-  <div id="menu">
-    <button type="button" class="btn btn-default btnJoburg">Johannesburg</button>
-    <button type="button" class="btn btn-default btnCapeTown">Cape Town</button>
-    <button type="button" class="btn btn-default btnDurban">Durban</button>
-    <button type="button" class="btn btn-default btnEastLondon">East London</button>
-    <button type="button" class="btn btn-default btnNelspruit">Nelspruit</button>
-    <button type="button" class="btn btn-default btnPretoria">Pretoria</button>
-    <button type="button" class="btn btn-default btnPortElizabeth">Port Elizabeth</button>
-    <button type="button" class="btn btn-default btnPolokwane">Polokwane</button>
-    <button type="button" class="btn btn-default btnBloemfontein">Bloemfontein</button>
-  </div>
-
-
-  <div class="row">
   
-    <div id="map" class="col-xs-12 col-md-8"></div>
-    
-    <div id="info" class="col-xs-12 col-md-4">
 
-    <div id="jb" class="hidden"> <!-- johannesburg -->
-    <div class="headline" style="font-family:'Suranna',sans-serif;"><p>Johannesburg</p></div>
-    <div id="media"></div>
-    <div id="text"><p>Morbi velit ipsum, elementum nec odio non, mollis rhoncus nisi. Cras sed urna elit. In hac habitasse platea dictumst. Cras dolor mauris, facilisis eu massa vel, dictum facilisis tortor. Morbi quis dui ut dolor tincidunt pulvinar. Suspendisse ut dui gravida, sagittis magna vel, pretium ex. Sed lacinia urna a pretium fringilla. Nullam blandit quam ut velit eleifend sollicitudin. Integer ullamcorper eros felis, id feugiat ex aliquet non. Praesent mollis magna eu sapien hendrerit elementum. Vestibulum eu neque ut mauris mollis lacinia sed nec orci. In dolor nunc, sollicitudin eget libero id, hendrerit vestibulum ex. Integer dapibus, metus quis efficitur ultricies, purus nisi aliquam elit, vitae ornare dolor nibh sit amet purus.</p><p>Sed commodo enim vel lectus fermentum tristique. Morbi facilisis ipsum vel sapien elementum tristique. Aliquam erat volutpat. Maecenas pulvinar posuere massa id cursus.</p></div><div id="chart"></div>
-    </div>
 
-    <div id="ct" class="hidden"> <!-- east london -->
-    <div class="headline" style="font-family:'Suranna',sans-serif;"><p>Cape Town</p></div>
-    <div id="media"></div>
-    <div id="text"><p>Morbi velit ipsum, elementum nec odio non, mollis rhoncus nisi. Cras sed urna elit. In hac habitasse platea dictumst. Cras dolor mauris, facilisis eu massa vel, dictum facilisis tortor. Morbi quis dui ut dolor tincidunt pulvinar. Suspendisse ut dui gravida, sagittis magna vel, pretium ex. Sed lacinia urna a pretium fringilla. Nullam blandit quam ut velit eleifend sollicitudin. Integer ullamcorper eros felis, id feugiat ex aliquet non. Praesent mollis magna eu sapien hendrerit elementum. Vestibulum eu neque ut mauris mollis lacinia sed nec orci. In dolor nunc, sollicitudin eget libero id, hendrerit vestibulum ex. Integer dapibus, metus quis efficitur ultricies, purus nisi aliquam elit, vitae ornare dolor nibh sit amet purus.</p><p>Sed commodo enim vel lectus fermentum tristique. Morbi facilisis ipsum vel sapien elementum tristique. Aliquam erat volutpat. Maecenas pulvinar posuere massa id cursus.</p></div><div id="chart"></div>
-    </div>
+  <div class="col-xs-12 col-md-8 col-md-offset-2">
+  
+  <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at turpis eu lectus auctor condimentum quis ac tortor. Sed eget dapibus massa. Maecenas venenatis tortor non suscipit varius. Suspendisse blandit, dui sed convallis viverra, quam ligula fermentum purus, at dictum diam tellus at nisl. Quisque dapibus tempor nibh, sed feugiat ex dictum eget. Vivamus ac pellentesque metus. Nulla nec elit pretium, faucibus purus non, aliquam sapien. Maecenas commodo pretium nulla, a tempus arcu pharetra quis.</p>
 
-    <div id="dbn" class="hidden"> <!-- east london -->
-    <div class="headline" style="font-family:'Suranna',sans-serif;"><p>Durban</p></div>
-    <div id="media"></div>
-    <div id="text"><p>Morbi velit ipsum, elementum nec odio non, mollis rhoncus nisi. Cras sed urna elit. In hac habitasse platea dictumst. Cras dolor mauris, facilisis eu massa vel, dictum facilisis tortor. Morbi quis dui ut dolor tincidunt pulvinar. Suspendisse ut dui gravida, sagittis magna vel, pretium ex. Sed lacinia urna a pretium fringilla. Nullam blandit quam ut velit eleifend sollicitudin. Integer ullamcorper eros felis, id feugiat ex aliquet non. Praesent mollis magna eu sapien hendrerit elementum. Vestibulum eu neque ut mauris mollis lacinia sed nec orci. In dolor nunc, sollicitudin eget libero id, hendrerit vestibulum ex. Integer dapibus, metus quis efficitur ultricies, purus nisi aliquam elit, vitae ornare dolor nibh sit amet purus.</p><p>Sed commodo enim vel lectus fermentum tristique. Morbi facilisis ipsum vel sapien elementum tristique. Aliquam erat volutpat. Maecenas pulvinar posuere massa id cursus.</p></div><div id="chart"></div>
-    </div>
+  <p class="para">Suspendisse interdum convallis ipsum. Nunc eget est consectetur, tristique nunc vitae, consequat est. Donec lacus ante, bibendum sed facilisis sollicitudin, imperdiet et risus. Duis ac leo massa. Vestibulum efficitur nec quam ac pulvinar. Cras nec molestie mi. Aenean non facilisis leo, et pulvinar nibh. Maecenas dignissim lacus a enim sollicitudin iaculis. Vestibulum imperdiet nunc vitae nunc molestie, vitae hendrerit dolor porttitor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus iaculis imperdiet venenatis. Nam auctor dui at erat lacinia, quis ultrices quam pellentesque. Fusce rhoncus turpis id tincidunt dignissim.</p>
 
-    <div id="el" class="hidden"> <!-- east london -->
-    <div class="headline" style="font-family:'Suranna',sans-serif;"><p>East London</p></div>
-    <div id="media"></div>
-    <div id="text"><p>Morbi velit ipsum, elementum nec odio non, mollis rhoncus nisi. Cras sed urna elit. In hac habitasse platea dictumst. Cras dolor mauris, facilisis eu massa vel, dictum facilisis tortor. Morbi quis dui ut dolor tincidunt pulvinar. Suspendisse ut dui gravida, sagittis magna vel, pretium ex. Sed lacinia urna a pretium fringilla. Nullam blandit quam ut velit eleifend sollicitudin. Integer ullamcorper eros felis, id feugiat ex aliquet non. Praesent mollis magna eu sapien hendrerit elementum. Vestibulum eu neque ut mauris mollis lacinia sed nec orci. In dolor nunc, sollicitudin eget libero id, hendrerit vestibulum ex. Integer dapibus, metus quis efficitur ultricies, purus nisi aliquam elit, vitae ornare dolor nibh sit amet purus.</p><p>Sed commodo enim vel lectus fermentum tristique. Morbi facilisis ipsum vel sapien elementum tristique. Aliquam erat volutpat. Maecenas pulvinar posuere massa id cursus.</p></div><div id="chart"></div>
-    </div>
+  <p class="para">Vivamus a rutrum erat. Etiam nec nibh vitae neque blandit pharetra quis id lacus. Cras vel nisl sed massa hendrerit egestas. Nullam sodales justo elit, a vehicula elit fermentum eu. In mollis ante sed dui fermentum, at commodo metus pellentesque. Morbi consequat nibh purus, ut luctus felis dapibus in. Nullam faucibus tincidunt velit ac placerat. Cras tristique fermentum felis vitae pharetra. In nec leo et libero blandit facilisis.</p>
 
-    <div id="nl" class="hidden"> <!-- east london -->
-    <div class="headline" style="font-family:'Suranna',sans-serif;"><p>Nelspruit</p></div>
-    <div id="media"></div>
-    <div id="text"><p>Morbi velit ipsum, elementum nec odio non, mollis rhoncus nisi. Cras sed urna elit. In hac habitasse platea dictumst. Cras dolor mauris, facilisis eu massa vel, dictum facilisis tortor. Morbi quis dui ut dolor tincidunt pulvinar. Suspendisse ut dui gravida, sagittis magna vel, pretium ex. Sed lacinia urna a pretium fringilla. Nullam blandit quam ut velit eleifend sollicitudin. Integer ullamcorper eros felis, id feugiat ex aliquet non. Praesent mollis magna eu sapien hendrerit elementum. Vestibulum eu neque ut mauris mollis lacinia sed nec orci. In dolor nunc, sollicitudin eget libero id, hendrerit vestibulum ex. Integer dapibus, metus quis efficitur ultricies, purus nisi aliquam elit, vitae ornare dolor nibh sit amet purus.</p><p>Sed commodo enim vel lectus fermentum tristique. Morbi facilisis ipsum vel sapien elementum tristique. Aliquam erat volutpat. Maecenas pulvinar posuere massa id cursus.</p></div><div id="chart"></div>
-    </div>
+  <p class="embed-Map">This is example of the map embedded</p>
 
-    <div id="pt" class="hidden"> <!-- east london -->
-    <div class="headline" style="font-family:'Suranna',sans-serif;"><p>Pretoria</p></div>
-    <div id="media"></div>
-    <div id="text"><p>Morbi velit ipsum, elementum nec odio non, mollis rhoncus nisi. Cras sed urna elit. In hac habitasse platea dictumst. Cras dolor mauris, facilisis eu massa vel, dictum facilisis tortor. Morbi quis dui ut dolor tincidunt pulvinar. Suspendisse ut dui gravida, sagittis magna vel, pretium ex. Sed lacinia urna a pretium fringilla. Nullam blandit quam ut velit eleifend sollicitudin. Integer ullamcorper eros felis, id feugiat ex aliquet non. Praesent mollis magna eu sapien hendrerit elementum. Vestibulum eu neque ut mauris mollis lacinia sed nec orci. In dolor nunc, sollicitudin eget libero id, hendrerit vestibulum ex. Integer dapibus, metus quis efficitur ultricies, purus nisi aliquam elit, vitae ornare dolor nibh sit amet purus.</p><p>Sed commodo enim vel lectus fermentum tristique. Morbi facilisis ipsum vel sapien elementum tristique. Aliquam erat volutpat. Maecenas pulvinar posuere massa id cursus.</p></div><div id="chart"></div>
-    </div>
-
-    <div id="pe" class="hidden"> <!-- east london -->
-    <div class="headline" style="font-family:'Suranna',sans-serif;"><p>Port Elizabeth</p></div>
-    <div id="media"></div>
-    <div id="text"><p>Morbi velit ipsum, elementum nec odio non, mollis rhoncus nisi. Cras sed urna elit. In hac habitasse platea dictumst. Cras dolor mauris, facilisis eu massa vel, dictum facilisis tortor. Morbi quis dui ut dolor tincidunt pulvinar. Suspendisse ut dui gravida, sagittis magna vel, pretium ex. Sed lacinia urna a pretium fringilla. Nullam blandit quam ut velit eleifend sollicitudin. Integer ullamcorper eros felis, id feugiat ex aliquet non. Praesent mollis magna eu sapien hendrerit elementum. Vestibulum eu neque ut mauris mollis lacinia sed nec orci. In dolor nunc, sollicitudin eget libero id, hendrerit vestibulum ex. Integer dapibus, metus quis efficitur ultricies, purus nisi aliquam elit, vitae ornare dolor nibh sit amet purus.</p><p>Sed commodo enim vel lectus fermentum tristique. Morbi facilisis ipsum vel sapien elementum tristique. Aliquam erat volutpat. Maecenas pulvinar posuere massa id cursus.</p></div><div id="chart"></div>
-    </div>
-
-    <div id="pl" class="hidden"> <!-- east london -->
-    <div class="headline" style="font-family:'Suranna',sans-serif;"><p>Polokwane</p></div>
-    <div id="media"></div>
-    <div id="text"><p>Morbi velit ipsum, elementum nec odio non, mollis rhoncus nisi. Cras sed urna elit. In hac habitasse platea dictumst. Cras dolor mauris, facilisis eu massa vel, dictum facilisis tortor. Morbi quis dui ut dolor tincidunt pulvinar. Suspendisse ut dui gravida, sagittis magna vel, pretium ex. Sed lacinia urna a pretium fringilla. Nullam blandit quam ut velit eleifend sollicitudin. Integer ullamcorper eros felis, id feugiat ex aliquet non. Praesent mollis magna eu sapien hendrerit elementum. Vestibulum eu neque ut mauris mollis lacinia sed nec orci. In dolor nunc, sollicitudin eget libero id, hendrerit vestibulum ex. Integer dapibus, metus quis efficitur ultricies, purus nisi aliquam elit, vitae ornare dolor nibh sit amet purus.</p><p>Sed commodo enim vel lectus fermentum tristique. Morbi facilisis ipsum vel sapien elementum tristique. Aliquam erat volutpat. Maecenas pulvinar posuere massa id cursus.</p></div><div id="chart"></div>
-    </div>
-
-    <div id="blf" class="hidden"> <!-- east london -->
-    <div class="headline" style="font-family:'Suranna',sans-serif;"><p>Bloemfontein</p></div>
-    <div id="media"></div>
-    <div id="text"><p>Morbi velit ipsum, elementum nec odio non, mollis rhoncus nisi. Cras sed urna elit. In hac habitasse platea dictumst. Cras dolor mauris, facilisis eu massa vel, dictum facilisis tortor. Morbi quis dui ut dolor tincidunt pulvinar. Suspendisse ut dui gravida, sagittis magna vel, pretium ex. Sed lacinia urna a pretium fringilla. Nullam blandit quam ut velit eleifend sollicitudin. Integer ullamcorper eros felis, id feugiat ex aliquet non. Praesent mollis magna eu sapien hendrerit elementum. Vestibulum eu neque ut mauris mollis lacinia sed nec orci. In dolor nunc, sollicitudin eget libero id, hendrerit vestibulum ex. Integer dapibus, metus quis efficitur ultricies, purus nisi aliquam elit, vitae ornare dolor nibh sit amet purus.</p><p>Sed commodo enim vel lectus fermentum tristique. Morbi facilisis ipsum vel sapien elementum tristique. Aliquam erat volutpat. Maecenas pulvinar posuere massa id cursus.</p></div><div id="chart"></div>
-    </div>
-
-    </div>
-
+  <p class="para">Mauris consequat enim quis viverra sagittis. Nulla bibendum mauris ut rutrum blandit. Nullam maximus orci eu leo semper, et mattis ex vulputate. Cras quis augue non nunc semper placerat et a leo. Mauris sodales pharetra malesuada. In ut dapibus massa, vel dignissim lorem. Pellentesque elit erat, ullamcorper blandit mi a, mollis vulputate nisl. Morbi quis est id est tempus venenatis. Morbi feugiat interdum ex, et bibendum odio suscipit finibus. Donec rhoncus ante cursus, dapibus neque id, lacinia quam. Nullam eu nisi suscipit, pharetra ante ut, molestie sem. Vivamus imperdiet sapien ut nisl sagittis, eu posuere neque auctor. Aenean porta ut lacus in tempor. Phasellus ut blandit arcu. Nullam nec rhoncus ligula.</p>
+  
   </div>
 
-    <div id="credit">
-    <p>Produced by Code for South Africa Data Journalism Academy</p>
-    </div>
+  <div id="credit" class="col-xs-12 col-md-8 col-md-offset-2">
+    <p>Produced by Code for South Africa Data Journalism Academy in collaboration with City Press</p>
+    <p>Daniela Quiros, Julia Renouprez and Lailah Ryklief</p>
+  </div>
 
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/cartodb.js"></script>

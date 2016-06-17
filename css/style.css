@@ -108,3 +108,9 @@ div.cartodb-legend.category ul li {
   padding:10px 0px;
 }
 
+#leadImg img {
+  width:100%;
+}
+.para {
+  text-align: justify;
+}
