@@ -20,9 +20,20 @@ h1 {
   text-transform: capitalize;
 }
 
+.mapH1 {
+  text-align: center;
+}
+
 h2 {
   font-family: 'Suranna', sans-serif;
   font-size: 2em;
+  text-align:justify;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-family: 'Suranna', sans-serif;
+  font-size: 1.4em;
   text-align:justify;
   text-transform: capitalize;
 }
@@ -50,7 +61,6 @@ h2 {
 #info {
   border-top: 0px;
   background-color:#fff;
-  height:480px;
 }
 #menu {
     margin-left: auto;
@@ -62,7 +72,7 @@ h2 {
   font-family: 'Gudea', sans-serif;
   font-size: 13px;
   padding: 0px 15px;
-  color:#999;
+  color:#555;
   text-align: justify;
 }
 .btn {
@@ -89,7 +99,7 @@ background-color: transparent!important;
 }
 
 div.cartodb-legend-stack div.cartodb-legend {
-  background-color:transparent!important;
+  background-color:#fff!important;
   border-radius: 0px!important;
 }
 
@@ -115,8 +125,20 @@ div.cartodb-legend.category ul li {
   font-family:'Gudea', sans-serif;
   text-align:center;
   padding:10px 0px;
+  background-color: #efefef;
 }
-
+#creditMap {
+  font-family:'Gudea', sans-serif;
+  text-align: center;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  color: #379890;
+  font-size: 12px;
+}
+#leadImg {
+  padding-left:0px!important;
+  padding-right:0px!important;
+}
 #leadImg img {
   width:100%;
 }
@@ -129,4 +151,31 @@ div.cartodb-legend.category ul li {
 .infoContext {
   background-color:#efefef;
   padding:20px;
+}
+.vid {
+  width:100%;
+}
+
+.captionVid {
+  text-align:center;
+}
+.creditName {
+  color:#000;
+  font-weight:600;
+  text-transform: uppercase;
+  font-size:12px;
+}
+
+#menuMobi {
+  display:none;
+  padding-bottom:5px;
+}
+
+#menuMobi .btn {
+background-color:#efefef;
+}
+
+@media screen and (max-width: 480px) {
+  #menu {display:none;}
+  #menuMobi {display:inline;padding-bottom:5px;}
 }

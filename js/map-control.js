@@ -57,12 +57,12 @@ window.onload = function() {
     $("#ct").removeClass("hidden").show();    
     });
 
-    // Durban
-    $(".btnDurban").on('click', function() {
-    map_object.setView([-29.854316, 31.029092],10.5);
-    // hide info
-    $("#ct").addClass("hidden").hide();
+    //Durban
+     $(".btnDurban").on('click', function() {
+    map_object.setView([-29.857927, 31.022372],11);
+        // hide info
     $("#jb").addClass("hidden").hide();
+    $("#ct").addClass("hidden").hide();
     $("#el").addClass("hidden").hide();
     $("#nl").addClass("hidden").hide();
     $("#pt").addClass("hidden").hide();
@@ -73,21 +73,20 @@ window.onload = function() {
     $("#dbn").removeClass("hidden").show();    
     });
 
-    // East London
+    //East London
     $(".btnEastLondon").on('click', function() {
-    map_object.setView([-33.031001, 27.881522],11.5);
-    /*map_object.dragging.disable();*/
+    map_object.setView([-33.028951, 27.855194],12);
     // hide info
-    $("#jb").addClass("hidden").hide();
     $("#ct").addClass("hidden").hide();
-    $("#dbn").addClass("hidden").hide();
+    $("#jb").addClass("hidden").hide();
     $("#nl").addClass("hidden").hide();
+    $("#dbn").addClass("hidden").hide();
     $("#pt").addClass("hidden").hide();
     $("#pe").addClass("hidden").hide();
     $("#pl").addClass("hidden").hide();
     $("#blf").addClass("hidden").hide();
     // show info
-    $("#el").removeClass("hidden").show(); 
+    $("#el").removeClass("hidden").show();     
     });
 
     //Nelspruit
