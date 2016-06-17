@@ -16,7 +16,14 @@ body {position:absolute; top:0; bottom:0; right:0; left:0;}
 h1 {
   font-family: 'Suranna', sans-serif;
   font-size:2.5em;
-  text-align: center;
+  text-align: justify;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-family: 'Suranna', sans-serif;
+  font-size: 2em;
+  text-align:justify;
   text-transform: capitalize;
 }
 
@@ -67,8 +74,10 @@ h1 {
   background-color: transparent!important;
   color:#999!important;
 }
-
-
+.byline {
+  font-size:14px;
+  text-align: justify;
+}
 div.cartodb-legend-stack { 
 /*change position, */
 bottom:0px!important;
@@ -113,4 +122,11 @@ div.cartodb-legend.category ul li {
 }
 .para {
   text-align: justify;
+}
+.caption {
+  text-align:right;
+}
+.infoContext {
+  background-color:#efefef;
+  padding:20px;
 }
