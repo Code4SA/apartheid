@@ -1,7 +1,7 @@
 ## Embed code
 
 ```html
-for story
+for story with embedded map
 <script type="text/javascript" src="https://static.code4sa.org/apartheid/embed-story.js"></script>
 
 for map
