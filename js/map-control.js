@@ -39,19 +39,19 @@ window.onload = function() {
 
     // Cape Town
     $(".btnCapeTown").on('click', function() {
-    map_object.setView([-33.99943, 18.61679],10.5);
-        // hide info
+    map_object.setView([-34.021784, 18.502420],10);
+    // hide info
     $("#jb").addClass("hidden").hide();
     $("#dbn").addClass("hidden").hide();
     $("#el").addClass("hidden").hide();
     $("#pt").addClass("hidden").hide();
     // show info
-    $("#ct").removeClass("hidden").show();    
+    $("#ct").removeClass("hidden").show();   
     });
 
     //Durban
      $(".btnDurban").on('click', function() {
-    map_object.setView([-29.857927, 31.022372],10);
+    map_object.setView([-29.864142, 30.975534],10);
         // hide info
     $("#jb").addClass("hidden").hide();
     $("#ct").addClass("hidden").hide();
@@ -61,16 +61,16 @@ window.onload = function() {
     $("#dbn").removeClass("hidden").show();    
     });
 
-    //East London
-    $(".btnEastLondon").on('click', function() {
-    map_object.setView([-33.028951, 27.855194],11.3);
-    // hide info
-    $("#ct").addClass("hidden").hide();
+    //EL
+     $(".btnEastLondon").on('click', function() {
+    map_object.setView([-32.995302, 27.862297],11.3);
+        // hide info
     $("#jb").addClass("hidden").hide();
+    $("#ct").addClass("hidden").hide();
     $("#dbn").addClass("hidden").hide();
     $("#pt").addClass("hidden").hide();
     // show info
-    $("#el").removeClass("hidden").show();     
+    $("#el").removeClass("hidden").show();    
     });
 
     // Pretoria

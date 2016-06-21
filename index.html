@@ -8,12 +8,21 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link href="css/lity.css" rel="stylesheet">
+  <script src="js/lity.js"></script>
+  <script>
+    var lightbox = lity();
+    // Open a URL in a lightbox
+    lightbox('https://www.youtube.com/embed/HJXw8oUx4Mk?rel=0');
+
+    // Bind as an event handler
+    $(document).on('click', '[data-lightbox]', lightbox);
+  </script>
 
 </head>
 
 <body>
   
-  <div id="leadImg" class="col-xs-12"><img src="img/Spatial package 1.jpg" title="View" alt="View" /></div>
+  <div class="leadImg" class="col-xs-12"><img src="img/Spatial package 1.jpg" title="View" alt="View" /></div>
 
   <div class="col-xs-12 col-md-8 col-md-offset-2">
   <p class="caption">PICTURE PERFECT? Some say Cosmo City in the north of Johannesburg is an example of good spatial planning because it has developed into ‘a town of its own’, while others believe it’s too far from the economic hub. PHOTO: TEBOGO LETSIE</p>
@@ -30,6 +39,8 @@
 
   <!--<p class="embed-Map"><script type="text/javascript" src="https://static.code4sa.org/apartheid/embed.js"></script></p>-->
 
+  <p class="infoContext">Click on the names of South Africa's largest metros to see the distribution of races across the cities. Hover or click on individual suburbs for more information.</p>
+
   <div id="mapContainer">
 
   <div><h1 class="mapH1">The Legacy of Apartheid</h1></div>
@@ -44,15 +55,15 @@
     
     <div id="info" class="col-xs-12 col-md-4">
 
-    <!-- johannesburg --><div id="jb" class="hidden"><div class="headline" style="font-family:'Suranna',sans-serif;"><p>Johannesburg</p></div><div id="media"></div><div id="text"><p>Despite being the economic capital of the country, Johannesburg does not have the highest commuting times in the country. In Johannesburg, black commuters using public transport take, on average, 64 minutes to get to work, while white commuters take 47. The first available mode of public transport is about ten minutes away for the average black commuter, and two minutes for the average white commuter.</p></div><div id="chart"></div></div>
+    <!-- johannesburg --><div id="jb" class="hidden"><div class="headline" style="font-family:'Suranna',sans-serif;"><p>Johannesburg</p></div><div id="media"></div><div id="text"><p>Despite being the economic capital of the country, Johannesburg does not have the highest commuting times in the country. In Johannesburg, black commuters using public transport take, on average, 64 minutes to get to work, while white commuters take 47. The first available mode of public transport is about ten minutes away for the average black commuter, and two minutes for the average white commuter.</p></div></div>
 
-    <!-- cape town --><div id="ct" class="hidden"><div class="headline" style="font-family:'Suranna',sans-serif;"><p>Cape Town</p></div><div id="media"></div><div id="text"><p>Cape Town is characterised by long commuting times and more difficult access to public transport on the outskirts of the city.The average time for a black commuter to reach the first available mode of public transport is almost 12 minutes, while white commuters need around two minutes to reach such transport, the latest Statistics South Africa National Household Travel Survey shows. White commuters, on average, take 40 minutes to get to work, while black commuters take 62 minutes.</p></div><div id="chart"></div></div>
+    <!-- cape town --><div id="ct" class="hidden"><div class="headline" style="font-family:'Suranna',sans-serif;"><p>Cape Town</p></div><div id="media"></div><div id="text"><p>Cape Town is characterised by long commuting times and more difficult access to public transport on the outskirts of the city.The average time for a black commuter to reach the first available mode of public transport is almost 12 minutes, while white commuters need around two minutes to reach such transport, the latest Statistics South Africa National Household Travel Survey shows. White commuters, on average, take 40 minutes to get to work, while black commuters take 62 minutes.</p></div></div>
 
-    <!-- durban --><div id="dbn" class="hidden"><div class="headline" style="font-family:'Suranna',sans-serif;"><p>Durban</p></div><div id="media"></div><div id="text"><p>In Durban, white people live the furthest from the nearest mode of public transport compared to other metros – about six minutes from home to the transport mode. But the nationwide disparity between black and white commuters is evident in this city, too: black commuters live about 10 minutes from the first mode of public transport. It takes black people far longer than white people to get to work: 58 minutes versus 36 minutes.</p></div><div id="chart"></div></div>
+    <!-- durban --><div id="dbn" class="hidden"><div class="headline" style="font-family:'Suranna',sans-serif;"><p>Durban</p></div><div id="media"></div><div id="text"><p>In Durban, white people live the furthest from the nearest mode of public transport compared to other metros – about six minutes from home to the transport mode. But the nationwide disparity between black and white commuters is evident in this city, too: black commuters live about 10 minutes from the first mode of public transport. It takes black people far longer than white people to get to work: 58 minutes versus 36 minutes.</p></div></div>
 
-    <!-- east london --><div id="el" class="hidden"><div class="headline" style="font-family:'Suranna',sans-serif;"><p>East London</p></div><div id="media"></div><div id="text"><p>East London is the city with the smallest gap in commuting times to work between black and white people: at 53 minutes (black) and 43 minutes (white) respectively.</p></div><div id="chart"></div></div>
+    <!-- east london --><div id="el" class="hidden"><div class="headline" style="font-family:'Suranna',sans-serif;"><p>East London</p></div><div id="media"></div><div id="text"><p>East London is the city with the smallest gap in commuting times to work between black and white people: at 53 minutes (black) and 43 minutes (white) respectively.</p></div></div>
 
-    <!-- pretoria --><div id="pt" class="hidden"><div class="headline" style="font-family:'Suranna',sans-serif;"><p>Pretoria</p></div><div id="media"></div><div id="text"><p>Among the eight metros analysed, black (African) commuters in Pretoria who used public transport had the longest average daily one-way commute to work. Black commuters spent 80 minutes on average whereas it took white commuters on average 44 minutes. The difference in access to public transport is also significant: black commuters needed 11 minutes to reach their first mode of public transport, while white commuters only needed two minutes.</p></div><div id="chart"></div></div>
+    <!-- pretoria --><div id="pt" class="hidden"><div class="headline" style="font-family:'Suranna',sans-serif;"><p>Pretoria</p></div><div id="media"></div><div id="text"><p>Among the eight metros analysed, black (African) commuters in Pretoria who used public transport had the longest average daily one-way commute to work. Black commuters spent 80 minutes on average whereas it took white commuters on average 44 minutes. The difference in access to public transport is also significant: black commuters needed 11 minutes to reach their first mode of public transport, while white commuters only needed two minutes.</p><p class="imgCenter"><a href="https://www.impulscentrum.be/south_africa/mod3_city/theo3.asp" target="_blank"><img width="100%" src="img/map-pretoria-1948.jpg" alt="Pretoria Apartheid spatial planning circa 1948" title="Pretoria Apartheid spatial planning circa 1948" /></a></p><p class="caption">A map of Pretoria in 1948, the year that the National Party came to power, showing that thousands of black people lived in “white” areas before racially segregated living was legislated. SOURCE: <a href="https://www.impulscentrum.be/south_africa/mod3_city/theo3.asp" target="_blank">Impulse Centrum</p></a></div></div>
 
     </div>
     
@@ -66,7 +77,9 @@
 
   <p class="para">In the eight cities analysed for this investigation, including Johannesburg, Pretoria, Durban, Cape Town and Port Elizabeth, African and coloured people have the least access to public transport – measured by time spent walking to transport – and are forced to take longer journeys to work. For black residents of these cities, the average daily one-way commute lasts up to two and a half times that of white residents.</br>If you break down the data by household income, the difference remains. Among those who belong to a household earning less than R21 000 a month, black commuters spend on average 50 minutes travelling to and from work, while white people spend 36 minutes.In the eight cities analysed, black commuters in Pretoria are the worst off.</br>Makgorometje Makgata, the City of Tshwane’s strategic executive director for city planning and development, says in an effort to achieve spatial justice, a decision has been made that no major development will take place if it is more than 25km from the city. The city, he says, has approved two major high-density residential nodes towards Pretoria north and east.</br>“We are doing all this in an effort to bring people closer to the city.”</p>
 
-  <a href="https://www.youtube.com/embed/HJXw8oUx4Mk?rel=0" data-lity>iFrame Youtube</a>
+  <div class="videoDesktop"><p class="col-xs-12"><iframe width="560" height="315" src="https://www.youtube.com/embed/HJXw8oUx4Mk?rel=0" frameborder="0" allowfullscreen></iframe></p><p class="captionVid">VIDEO: AVANTIKA SEETH</p></div>
+
+  <div class="videoMobi"><p class="col-xs-12"><iframe width="320" height="180" src="https://www.youtube.com/embed/HJXw8oUx4Mk?rel=0" frameborder="0" allowfullscreen></iframe></p><p class="captionVid">VIDEO: AVANTIKA SEETH</p></div>
 
   <p class="para">The National Household Travel Survey also measures how long it takes for commuters to reach the first available mode of transport, indicating how far they live from these services.
   In this instance, the worst city for black commuters is Cape Town, where black residents from households that earn less than R45 000 a month reported that it takes them 12 minutes to walk to their first available mode of transport, while for white residents, the average walking time is just three minutes. The same pattern can be observed in Pretoria, Johannesburg, Durban and Port Elizabeth.</br>Herron says the city has adopted a transit-oriented development strategy that is aimed at “ensuring that the development is aligned to our public transport network so we can start reducing travel time and cost. So [commuters] don’t use cars and can use public transport.”</br>However, the city’s plan to build new routes for its bus rapid transit (BRT) system is on a 20-year timeline.</br>“We have identified 10 new routes and we have planned BRT. In the public transport network plan, they want a new rail corridor that needs to be built. We are working with Prasa [the Passenger Rail Agency of SA], which already has a managing and planning team designing the route. We have 10 new BRT routes and one new rail route,” he said.</br>The National Household Travel Survey is conducted for the purposes of getting an “in-depth understanding of how and why people travel”</p>
@@ -78,7 +91,8 @@
 
   <p class="para">Pelican Park in Strandfontein, Cape Town, feels like a ghost town at 7am. Identical low-cost government houses sit alongside one another like matchboxes. The occasional dog barks in the distance. The quiet streets are badly lit and darkness hangs like a heavy cloak over them.</br>Yushra Adams (41), an activist involved in a handful of nongovernmental organisations, is dressed in a big leather coat with several layers underneath to ward off the winter cold. She has a hacking cough that breaks the silence every few minutes.</br>As she says goodbye, one of her five children locks up behind her. There is a small tuck shop, run by a family member who has already begun setting up for the day, next to  her home. It has a mesh window that shields the packets of chips and sweets that are on sale.</br>Adams rents out a room to earn extra money.</br>Heavy clouds gather. It is about to rain.</br>The area is “part of the territory controlled by a gang”, she says.</br>But Adams, who is outspoken against gender-based violence, says she will “never be attacked”.</br>“They’ve got great respect for me, actually.”</br>A field stretches out on either side of the road.</br>“Many women have been robbed here ... One morning, we picked up a body here,” she says, pointing and out of breath as she walks briskly to the safety of the busier road ahead.</br>“It’s a great risk for me, as a single woman and head of the house. I am providing for my family. Every day I work with that fear: will I [get there] safely?”</br>She climbs into a taxi as the rain begins to fall. The other passengers are quiet; a sleepy haze lingers.</br>After almost 40 minutes, covering a distance of only 10km, we arrive at the Wynberg train station.</br>Commuters’ feet crunch over piles of rubbish that have accumulated beneath a bridge near the station. After buying a ticket, Adams waits as a series of train-delay announcements blare over a speaker.</p>
 
-  <div id="videoDesktop"><h3>Video Example</h3><p class="para vid col-xs-12"><iframe width="560" height="315" src="https://www.youtube.com/embed/CzSzYOuSdtY" frameborder="0" allowfullscreen></iframe></p><p class="captionVid">VIDEO: KIM HARRISBERG</p></div>
+  <div class="videoDesktop"><p class="col-xs-12"><iframe width="560" height="315" src="https://www.youtube.com/embed/CzSzYOuSdtY" frameborder="0" allowfullscreen></iframe></p><p class="captionVid">VIDEO: KIM HARRISBERG</p></div>
+  <div class="videoMobi"><p class="col-xs-12"><iframe width="320" height="180" src="https://www.youtube.com/embed/CzSzYOuSdtY" frameborder="0" allowfullscreen></iframe></p><p class="captionVid">VIDEO: KIM HARRISBERG</p></div>
 
   <p class="para">“There are times when the trains are late. You have to be up early to be here on time ... and then the train is late. It makes you late for your work,” she says.</br>“Sometimes you don’t have enough airtime to call your work. It jeopardises your work because sometimes the bosses don’t understand.”</br>When the train to the city centre finally arrives, the waiting throng pushes to get on board. Inside, people rush to find a seat or an open spot to stand. Small pools of rainwater have gathered on the train floor.</br>“I was lucky to find a seat today,” says Adams. “Usually, I have to stand. I think it is the weather.”</br>She speaks about the vulnerability of women on the train. “You get touched by people, pushed by people. I have been pickpocketed. I have seen people getting beaten up here by police. The train is not safe, especially for women.</br>After arriving at Cape Town station, Adams says this is the first time she has felt safe on the train, “because I had two journalists with me”.</br>Her commute, she says, is usually “painful”.</br>The 23km journey to the social development building (also known as the Standard Bank building) where Adams works part time as a data collector, took her an hour and 16 minutes by train and taxi.</br>Monthly travel costs for herself and her children are R1 860 – 53% of her monthly salary. She wishes she could travel some other way but, as the breadwinner for her five children, Adams has no other option.</p>
 
@@ -89,9 +103,9 @@
 
   <p class="para">Every weekday, Rebotile Busang (33), a registry clerk from Soshanguve, travels to work in Silverton, Pretoria, on a Putco bus.</br>Her workplace is 50km away, and she spends about 180 minutes daily on the bus.</br>Black residents of Pretoria spent the greatest amount of time in the country on public transport, a daily average of 80 minutes to work, a data analysis conducted by Code for South Africa and City Press found. And with 403 162 residents living to the north of Pretoria, in Soshanguve, that’s a lot of minutes every day.</br>It’s 4pm on a Friday afternoon and Busang knocks off work at the police logistics department in Silverton. Buses and taxis whizz past as we wait at the stop while the late-afternoon chill builds up.</br>City Press joins Busang for the R20 ride home. We take our seats in a fairly empty bus as she sits next to a friend. “Everyone is friendly on the bus. We are all from Soshanguve and we travel the same route every morning and evening to and from work,” she says.</br>“I buy a weekly bus ticket, which is R156. There is a monthly ticket, which can be bought, but I don’t trust the bus services because sometimes they don’t operate and then we are left stranded. It’s not as if we get that money back, so this is a safer way for me to plan my travel costs.”</br>Busang stays in Block F West, Soshanguve, with her daughter, Keloabetse; her grandmother, who receives a monthly state pension; her aunt, who sells shoes and clothing; and her cousin, who is a mechanic. Apart from the day-to-day running of the household, she also has to see to the transport costs of Keloabetse (7), as she travels to school with a lift club.</br>“For the two of us, I pay around R1 200 a month. That includes my bus tickets, and her transport to and from school,” she says. This equates to 10% of her monthly income.</p>
 
-  <div id="leadImg" class="col-xs-12"><img src="img/Spatial package 10.jpg" title="Rebotile Busang and her daughter, Keloabetse" alt="Rebotile Busang and her daughter, Keloabetse" /></div>  
-
+  <div class="leadImg" class="col-xs-12"><img src="img/Spatial package 10.jpg" title="Rebotile Busang and her daughter, Keloabetse" alt="Rebotile Busang and her daughter, Keloabetse" />
   <p class="caption">Rebotile Busang and her daughter, Keloabetse PHOTO: TEBOGO LETSIE</p>
+  </div>
 
   <p class="para"></br>Aside from the cost, the travelling time eats away at Busang’s quality of life. “I am up every day at 3.30am because I have to make the lunches. My daughter wakes up at 4.30am. At first it was difficult for her to be up that early, but now she’s used to it.”</br>A woman walks down the aisle of the bus, selling chips and frozen yogurt.</br>“It’s going to be a long journey, my darling. You’ll get hungry and need to eat. These chips are only R1 a packet,” she says. Apart from her administration day job, she sells these snacks as a means to earn an extra income.</br>“Everyone on this bus is like family. In the morning, we even pray together,” she adds before leading them in a gospel song.</br>All around us, passengers begin to shut their eyes, succumbing to the weariness brought about by an early start.</br>At around 5.30pm, after battling through traffic, the bus finally arrives in Soshanguve.</br>Busang gets off at the third stop and walks the 10 minutes to her home.</br>It’s dark when she arrives and she is greeted by seven-year-old Keloabetse, who excitedly tells her about her day at school.</br>Busang says: “You know, if I don’t use the bus, I have to take two or three taxis to get to work, and it’s just too expensive and time consuming.</br>“I wish the government would do something about implementing reliable public transport for us, then life wouldn’t be so difficult. I still have to cook supper now and we are usually all in bed by 8pm. It’s a long day and we repeat the same routine weekly. But we’re used to it,” she says.</br>Keloabetse is eating a sandwich and drinking juice. “I don’t have any homework. I’m going to play with my cousin this weekend,” she says.</br>As her daughter eats, Busang busies herself with the evening tasks, seeing to her grandmother as she asks how her day was. She is about to cook supper for the family.</br>To get back to the bus stop in Silverton, City Press tries Uber. But there aren’t available cars in Soshanguve. By chance, an Uber driver from the township is on his way to a shift in Pretoria and picks us up, surprised to see our request on his phone. “If you logged the call five minutes later, I would have been gone and you would have to take taxis back to Silverton,” he says.</p>
 
@@ -100,7 +114,7 @@
     <p class="byline">by AVANTIKA SEETH</p>
   </div>
 
-  <div id="leadImg" class="col-xs-12"><img src="img/Spatial package 6.jpg" title="Edward Sadiki and his son, Rofhiwa (4)" alt="Edward Sadiki and his son, Rofhiwa (4)" /></div>  
+  <div class="leadImg" class="col-xs-12"><img src="img/Spatial package 6.jpg" title="Edward Sadiki and his son, Rofhiwa (4)" alt="Edward Sadiki and his son, Rofhiwa (4)" /></div>  
 
   <p class="caption">Edward Sadiki and his son, Rofhiwa (4) PHOTO: TEBOGO LETSIE</p>
 
@@ -111,7 +125,6 @@
   <div id="credit" class="col-xs-12"><p><img src="img/branding.png" alt="Code for South Africa Data Journalism Academy" title="Code for South Africa Data Journalism Academy" /></p><p>produced by Code for South Africa Data Journalism Academy in collaboration with City Press</p><p><span class="creditName">Daniela Q Lépiz</span> (words and data analysis, Code for South Africa)</p><p><span class="creditName">Avantika Seeth</span> (words, City Press)</p><p><span class="creditName">Kim Harrisberg</span> (video, Code for South Africa)</p><p><span class="creditName">Julia Renouprez</span> (spatial data, Code for South Africa)</p><p><span class="creditName">Lailah Ryklief</span> (web developer and visualisation, Code for South Africa)</p></div>
 
   <!-- Latest compiled and minified JavaScript -->
-  <script src="js/lity.js"></script>
   <script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/cartodb.js"></script>
   <script src="js/map-control.js"></script>
   <script src="js/pym.js"></script>
@@ -119,14 +132,6 @@
       var pymChild = new pym.Child({ id: 'code4sa-apartheid-index',
       polling: 1000
       });
-  </script>
-  <script>
-  var lightbox = lity();
-  // Open a URL in a lightbox
-lightbox('//www.youtube.com/watch?v=XSGBVzeBUbk');
-
-// Bind as an event handler
-$(document).on('click', '[data-lightbox]', lightbox);
   </script>
 
 </body>

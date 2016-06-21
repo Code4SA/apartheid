@@ -124,11 +124,11 @@ div.cartodb-legend.category ul li {
   color: #379890;
   font-size: 12px;
 }
-#leadImg {
+.leadImg {
   padding-left:0px!important;
   padding-right:0px!important;
 }
-#leadImg img {
+.leadImg img {
   width:100%;
 }
 .para {
@@ -141,17 +141,17 @@ div.cartodb-legend.category ul li {
   background-color:#efefef;
   padding:20px;
 }
-.vid {
-  width:100%;
-}
 .captionVid {
-  text-align:left;
+  text-align:center;
 }
 .creditName {
   color:#000;
   font-weight:600;
   text-transform: uppercase;
   font-size:12px;
+}
+.imgCenter {
+  text-align: center;
 }
 #menuMobi {
   display:none;
@@ -160,7 +160,12 @@ div.cartodb-legend.category ul li {
 #menuMobi .btn {
 background-color:#efefef;
 }
-@media screen and (max-width: 480px) {
+.videoDesktop {text-align: center;}
+.videoMobi {display: none;}
+
+@media screen and (max-width: 560px) {
   #menu {display:none;}
   #menuMobi {display:inline;padding-bottom:5px;}
+  .videoDesktop {display:none;}
+  .videoMobi {display: inline;text-align: center;}
 }
