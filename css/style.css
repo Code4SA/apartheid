@@ -16,35 +16,30 @@ html, body {
 h1 {
   font-family: 'Suranna', sans-serif;
   font-size:2.5em;
-  text-align: justify;
+  text-align: left;
   text-transform: capitalize;
 }
-
 .mapH1 {
   text-align: center;
 }
-
 h2 {
   font-family: 'Suranna', sans-serif;
   font-size: 1.8em;
-  text-align:justify;
+  text-align:left;
   text-transform: capitalize;
 }
-
 h3 {
   font-family: 'Suranna', sans-serif;
   font-size: 1.4em;
-  text-align:justify;
+  text-align:left;
   text-transform: capitalize;
 }
-
 .headline {
   padding: 0px 15px;
   font-size:2em;
   text-align: left;
   text-transform: capitalize;
 }
-
 #map {
     background-color: #fff;
     border-bottom: 0px;
@@ -55,7 +50,6 @@ h3 {
   margin-left:0px;
   margin-right:0px;
 }
-
 .hidden {display: none;}
 
 #info {
@@ -97,17 +91,14 @@ box-shadow: none!important;
 border: none!important;
 background-color: transparent!important;
 }
-
 div.cartodb-legend-stack div.cartodb-legend {
   background-color:#fff!important;
   border-radius: 0px!important;
 }
-
 div.cartodb-legend.category ul li {
   color:#999!important;
   font-family:'Gudea', sans-serif!important;
 }
-
 .leaflet-bar a, .leaflet-bar a:hover {
   background-color: #fff!important;
   color:#C5E8E3!important;
@@ -115,12 +106,10 @@ div.cartodb-legend.category ul li {
   box-shadow: none!important;
   border: 1px solid #C5E8E3!important;
 }
-
 .leaflet-left .leaflet-control {
   margin-left: 30px!important;
   box-shadow: none!important;
 }
-
 #credit {
   font-family:'Gudea', sans-serif;
   text-align:center;
@@ -146,7 +135,7 @@ div.cartodb-legend.category ul li {
   text-align: justify;
 }
 .caption {
-  text-align:right;
+  text-align:left;
 }
 .infoContext {
   background-color:#efefef;
@@ -155,9 +144,8 @@ div.cartodb-legend.category ul li {
 .vid {
   width:100%;
 }
-
 .captionVid {
-  text-align:center;
+  text-align:left;
 }
 .creditName {
   color:#000;
@@ -165,16 +153,13 @@ div.cartodb-legend.category ul li {
   text-transform: uppercase;
   font-size:12px;
 }
-
 #menuMobi {
   display:none;
   padding-bottom:5px;
 }
-
 #menuMobi .btn {
 background-color:#efefef;
 }
-
 @media screen and (max-width: 480px) {
   #menu {display:none;}
   #menuMobi {display:inline;padding-bottom:5px;}

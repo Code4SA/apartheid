@@ -27,82 +27,50 @@ window.onload = function() {
 
     // Joburg
     $(".btnJoburg").on('click', function() {
-    map_object.setView([-26.204110, 28.038298],11);
+    map_object.setView([-26.204110, 28.038298],10);
     // hide info
     $("#ct").addClass("hidden").hide();
     $("#dbn").addClass("hidden").hide();
     $("#el").addClass("hidden").hide();
-    $("#nl").addClass("hidden").hide();
     $("#pt").addClass("hidden").hide();
-    $("#pe").addClass("hidden").hide();
-    $("#pl").addClass("hidden").hide();
-    $("#blf").addClass("hidden").hide();
     // show info
     $("#jb").removeClass("hidden").show();   
     });
 
     // Cape Town
     $(".btnCapeTown").on('click', function() {
-    map_object.setView([-33.99943, 18.61679],11);
+    map_object.setView([-33.99943, 18.61679],10.5);
         // hide info
     $("#jb").addClass("hidden").hide();
     $("#dbn").addClass("hidden").hide();
     $("#el").addClass("hidden").hide();
-    $("#nl").addClass("hidden").hide();
     $("#pt").addClass("hidden").hide();
-    $("#pe").addClass("hidden").hide();
-    $("#pl").addClass("hidden").hide();
-    $("#blf").addClass("hidden").hide();
     // show info
     $("#ct").removeClass("hidden").show();    
     });
 
     //Durban
      $(".btnDurban").on('click', function() {
-    map_object.setView([-29.857927, 31.022372],11);
+    map_object.setView([-29.857927, 31.022372],10);
         // hide info
     $("#jb").addClass("hidden").hide();
     $("#ct").addClass("hidden").hide();
     $("#el").addClass("hidden").hide();
-    $("#nl").addClass("hidden").hide();
     $("#pt").addClass("hidden").hide();
-    $("#pe").addClass("hidden").hide();
-    $("#pl").addClass("hidden").hide();
-    $("#blf").addClass("hidden").hide();
     // show info
     $("#dbn").removeClass("hidden").show();    
     });
 
     //East London
     $(".btnEastLondon").on('click', function() {
-    map_object.setView([-33.028951, 27.855194],12);
+    map_object.setView([-33.028951, 27.855194],11.3);
     // hide info
     $("#ct").addClass("hidden").hide();
     $("#jb").addClass("hidden").hide();
-    $("#nl").addClass("hidden").hide();
     $("#dbn").addClass("hidden").hide();
     $("#pt").addClass("hidden").hide();
-    $("#pe").addClass("hidden").hide();
-    $("#pl").addClass("hidden").hide();
-    $("#blf").addClass("hidden").hide();
     // show info
     $("#el").removeClass("hidden").show();     
-    });
-
-    //Nelspruit
-    $(".btnNelspruit").on('click', function() {
-    map_object.setView([-25.479533, 30.974733],12);
-    // hide info
-    $("#ct").addClass("hidden").hide();
-    $("#jb").addClass("hidden").hide();
-    $("#el").addClass("hidden").hide();
-    $("#dbn").addClass("hidden").hide();
-    $("#pt").addClass("hidden").hide();
-    $("#pe").addClass("hidden").hide();
-    $("#pl").addClass("hidden").hide();
-    $("#blf").addClass("hidden").hide();
-    // show info
-    $("#nl").removeClass("hidden").show();     
     });
 
     // Pretoria
@@ -112,63 +80,10 @@ window.onload = function() {
     $("#ct").addClass("hidden").hide();
     $("#jb").addClass("hidden").hide();
     $("#el").addClass("hidden").hide();
-    $("#nl").addClass("hidden").hide();
     $("#dbn").addClass("hidden").hide();
-    $("#pe").addClass("hidden").hide();
-    $("#pl").addClass("hidden").hide();
-    $("#blf").addClass("hidden").hide();
     // show info
     $("#pt").removeClass("hidden").show();     
     });
-
-    // Port Elizabeth
-    $(".btnPortElizabeth").on('click', function() {
-    map_object.setView([-33.913990, 25.519156],11);
-    // hide info
-    $("#ct").addClass("hidden").hide();
-    $("#jb").addClass("hidden").hide();
-    $("#el").addClass("hidden").hide();
-    $("#nl").addClass("hidden").hide();
-    $("#pt").addClass("hidden").hide();
-    $("#dbn").addClass("hidden").hide();
-    $("#pl").addClass("hidden").hide();
-    $("#blf").addClass("hidden").hide();
-    // show info
-    $("#pe").removeClass("hidden").show();    
-    });
-
-    // Polokwane
-    $(".btnPolokwane").on('click', function() {
-    map_object.setView([-23.903600, 29.450417],12);
-    // hide info
-    $("#ct").addClass("hidden").hide();
-    $("#jb").addClass("hidden").hide();
-    $("#el").addClass("hidden").hide();
-    $("#nl").addClass("hidden").hide();
-    $("#pt").addClass("hidden").hide();
-    $("#pe").addClass("hidden").hide();
-    $("#dbn").addClass("hidden").hide();
-    $("#blf").addClass("hidden").hide();
-    // show info
-    $("#pl").removeClass("hidden").show();    
-    });
-
-    //Bloemfontein
-    $(".btnBloemfontein").on('click', function() {
-    map_object.setView([-29.119934, 26.225125],11);
-    // hide info
-    $("#ct").addClass("hidden").hide();
-    $("#jb").addClass("hidden").hide();
-    $("#el").addClass("hidden").hide();
-    $("#nl").addClass("hidden").hide();
-    $("#pt").addClass("hidden").hide();
-    $("#pe").addClass("hidden").hide();
-    $("#pl").addClass("hidden").hide();
-    $("#dbn").addClass("hidden").hide();
-    // show info
-    $("#blf").removeClass("hidden").show();     
-    });
-
 }
 
 
