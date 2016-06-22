@@ -23,7 +23,7 @@ window.onload = function() {
     //btn - metro switch
 
     // Default
-    $("#pt").removeClass("hidden").show(); 
+    $("#pt").removeClass("hidden").show();
 
     // Joburg
     $(".btnJoburg").on('click', function() {
@@ -35,7 +35,7 @@ window.onload = function() {
     $("#pt").addClass("hidden").hide();
     // show info
     $("#jb").removeClass("hidden").show();
-    ga('send', 'event', 'joburg', 'clicked');
+    ga('send', 'event', 'clicked', 'joburg');
     });
 
     // Cape Town
@@ -48,7 +48,7 @@ window.onload = function() {
     $("#pt").addClass("hidden").hide();
     // show info
     $("#ct").removeClass("hidden").show();
-    ga('send', 'event', 'cape town', 'clicked');
+    ga('send', 'event', 'clicked', 'cape town');
     });
 
     //Durban
@@ -61,7 +61,7 @@ window.onload = function() {
     $("#pt").addClass("hidden").hide();
     // show info
     $("#dbn").removeClass("hidden").show();
-    ga('send', 'event', 'durban', 'clicked');
+    ga('send', 'event', 'clicked', 'durban');
     });
 
     //EL
@@ -74,7 +74,7 @@ window.onload = function() {
     $("#pt").addClass("hidden").hide();
     // show info
     $("#el").removeClass("hidden").show();
-    ga('send', 'event', 'east london', 'clicked');
+    ga('send', 'event', 'clicked', 'east london');
     });
 
     // Pretoria
@@ -87,10 +87,6 @@ window.onload = function() {
     $("#dbn").addClass("hidden").hide();
     // show info
     $("#pt").removeClass("hidden").show();
-    ga('send', 'event', 'pretoria', 'clicked');
+    ga('send', 'event', 'clicked', 'pretoria');
     });
 }
-
-
-
- 
