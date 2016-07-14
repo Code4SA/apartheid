@@ -183,6 +183,10 @@ if (typeof(window.pym) === 'undefined') {
             this.iframe.setAttribute('frameborder', '0');
 
             // Append the iframe to our element.
+            while (this.el.firstChild) {
+              this.el.removeChild(this.el.firstChild);
+            }
+
             this.el.appendChild(this.iframe);
 
             // Add an event listener that will handle redrawing the child on resize.
