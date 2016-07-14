@@ -5,7 +5,7 @@
 */
 
 /* global module */
-
+if (typeof(pymloadedjsspecialshit) === 'undefined') {
 (function(factory) {
     if (typeof define === 'function' && define.amd) {
         define(factory);
@@ -140,7 +140,7 @@
             xdomain: '*'
         };
 
-        this.messageRegex = _makeMessageRegex(this.id); 
+        this.messageRegex = _makeMessageRegex(this.id);
         this.messageHandlers = {};
 
         /**
@@ -172,7 +172,7 @@
             } else {
                 this.url += '&';
             }
-            
+
             // Append the initial width as a querystring parameter, and the fragment id
             this.iframe.src = this.url + 'initialWidth=' + width + '&childId=' + this.id + hash;
 
@@ -249,7 +249,7 @@
              * Handle parent message from child.
              */
             var height = parseInt(message);
-            
+
             this.iframe.setAttribute('height', height + 'px');
             this.iframe.style['height'] = height + 'px';
         };
@@ -302,7 +302,7 @@
             this.settings[key] = config[key];
         }
 
-        // Add height event callback 
+        // Add height event callback
         this.onMessage('height', this._onHeightMessage);
 
         // Add a listener for processing messages from the child.
@@ -433,7 +433,7 @@
 
             // Get the child's height.
             body = document.getElementsByTagName('body')[0];
-            body.style["visibility"] = 'hidden'; 
+            body.style["visibility"] = 'hidden';
             //var height2 = document.getElementsByTagName('body')[0].offsetHeight.toString();
             //var height = document.getElementsByTagName('body')[0].offsetHeight.toString();
             var height = document.getElementsByTagName('body')[0].scrollHeight.toString();
@@ -445,7 +445,7 @@
 
             // Send the height to the parent.
             that.sendMessage('height', height.toString());
-            body.style["visibility"] = 'visible'; 
+            body.style["visibility"] = 'visible';
         };
 
         /**
@@ -517,3 +517,5 @@
 
     return lib;
 });
+  var pymloadedjsspecialshit = true;
+}
