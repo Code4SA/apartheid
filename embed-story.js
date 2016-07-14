@@ -1,5 +1,10 @@
 if (typeof(code4SAEmbedInjected) === 'undefined') {
+  var code4SAEmbedInjected = false;
+}
 
+if (!code4SAEmbedInjected) {
+  if (typeof(console) !== 'undefined')
+    console.log("embed's first run");
   if (document.location.hostname == "localhost") {
       var baseurl = "";
   } else {
@@ -10,4 +15,7 @@ if (typeof(code4SAEmbedInjected) === 'undefined') {
   document.write("<script>var pymParent = new pym.Parent('code4sa-apartheid-index', '" + baseurl + "index.html', {});</script>");
 
   var code4SAEmbedInjected = true;
+} else {
+  if (typeof(console) !== 'undefined')
+    console.log("already embedded");
 }
