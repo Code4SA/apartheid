@@ -5,7 +5,7 @@
 */
 
 /* global module */
-if (typeof(pymloadedjsspecialshit) === 'undefined') {
+if (typeof(window.pym) === 'undefined') {
 (function(factory) {
     if (typeof define === 'function' && define.amd) {
         define(factory);
@@ -517,5 +517,5 @@ if (typeof(pymloadedjsspecialshit) === 'undefined') {
 
     return lib;
 });
-  var pymloadedjsspecialshit = true;
+
 }
